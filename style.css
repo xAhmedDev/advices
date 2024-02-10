@@ -6,8 +6,13 @@
   font-family: "Manrope", sans-serif;
 }
 
+:root {
+  --primer-color: hsl(218, 23%, 16%);
+  --second-color: hsl(150, 100%, 66%);
+}
+
 body {
-  background-color: hsl(218, 23%, 16%);
+  background-color: var(--primer-color);
 }
 
 .adviceContainer {
@@ -23,6 +28,23 @@ body {
   align-items: center;
   max-width: 100%;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primer-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(218deg 34.72% 13.7% / 84.5%);
+}
 
 .content {
   display: inline-flex;
@@ -34,12 +56,20 @@ body {
   gap: 20px;
   max-width: 100%;
   overflow: hidden;
+  max-height: 80vh;
+  overflow: auto;
 }
 
 .adviceId span {
   font-weight: 400;
-  color: hsl(150, 100%, 66%);
+  color: var(--second-color);
   letter-spacing: 5px;
+}
+
+.theAdvice {
+  padding: 0 40px;
+  max-height: 80vh;
+  overflow: auto;
 }
 
 .content p {
@@ -64,7 +94,7 @@ body {
   display: flex;
   padding: 10px;
   border-radius: 50%;
-  background-color: hsl(150, 100%, 66%);
+  background-color: var(--second-color);
   position: absolute;
   bottom: -20px;
   cursor: pointer;

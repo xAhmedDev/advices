@@ -10,13 +10,21 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="lang.css" />
     <title>Advice #0</title>
   </head>
   <body>
     <div class="adviceContainer">
+      <div class="language-toggle">
+        <input type="checkbox" id="toggle" checked />
+
+        <label class="toggle-switch en" for="toggle">EN</label>
+        <label class="toggle-switch ar" for="toggle">AR</label>
+      </div>
+
       <div class="content">
         <div class="adviceId">
-          <span>Advice #<span class="advId"></span></span>
+          <span class="advId"></span>
         </div>
         <div class="theAdvice">
           <p></p>
@@ -44,5 +52,5 @@
       </button>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

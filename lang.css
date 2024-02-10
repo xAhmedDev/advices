@@ -35,7 +35,9 @@ label,
 }
 
 @media (max-height: 760px) {
+  
   .language-toggle {
-    top: -20px;
+    position: static;
   }
+
 }

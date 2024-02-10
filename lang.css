@@ -34,7 +34,7 @@ label,
   background: hsl(220, 23%, 5%);
 }
 
-@media (max-height: 700px) {
+@media (max-height: 760px) {
   .language-toggle {
     top: -40px;
   }

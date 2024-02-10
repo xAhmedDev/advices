@@ -34,10 +34,8 @@ label,
   background: hsl(220, 23%, 5%);
 }
 
-@media (max-height: 760px) {
-  
+@media (max-height: 880px) {
   .language-toggle {
     position: static;
   }
-
 }

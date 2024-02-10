@@ -109,6 +109,6 @@ body {
 
 @media (max-height: 880px) {
   .diceBtn {
-    bottom: 0;
+    bottom: 35px;
   }
 }

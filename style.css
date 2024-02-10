@@ -106,3 +106,9 @@ body {
 .diceBtn:hover {
   box-shadow: 0px 0px 10px 8px hsl(150, 100%, 66%, 0.35);
 }
+
+@media (max-height: 880px) {
+  .diceBtn {
+    bottom: 0;
+  }
+}
